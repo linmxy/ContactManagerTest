@@ -1,9 +1,6 @@
 machine:
   node:
     version: v0.12.2
-test:
-  pre:
-    - grunt test
 deployment:
   production:
     branch: master
