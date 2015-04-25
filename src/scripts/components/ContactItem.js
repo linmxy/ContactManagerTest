@@ -30,10 +30,10 @@ var ContactItem = React.createClass({
           <h3>
               {contact.name}
             <small>
-              <a onClick={this._edit}>
+              <a className="btn" onClick={this._edit}>
                 <span className="glyphicon glyphicon-pencil"></span>
               </a>
-              <a onClick={this._delete}>
+              <a className="btn" onClick={this._delete}>
                 <span className="glyphicon glyphicon-trash"></span>
               </a>
             </small>

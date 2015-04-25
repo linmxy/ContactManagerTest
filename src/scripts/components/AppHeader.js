@@ -2,7 +2,6 @@
 
 var React = require('react');
 
-
 var AppHeader = React.createClass({
   render: function() {
     return (

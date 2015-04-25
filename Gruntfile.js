@@ -1,4 +1,5 @@
 'use strict';
+var modRewrite = require('connect-modrewrite');
 
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
@@ -31,7 +32,8 @@ module.exports = function (grunt) {
         port: process.env.PORT || 8000,
         webpack: webpackDevConfig,
         publicPath: '/assets/',
-        contentBase: './<%= pkg.src %>/'
+        contentBase: './<%= pkg.src %>/',
+        historyApiFallback: true
       },
 
       start: {
@@ -49,7 +51,8 @@ module.exports = function (grunt) {
           keepalive: true,
           middleware: function (connect) {
             return [
-              mountFolder(connect, pkgConfig.dist)
+              mountFolder(connect, pkgConfig.dist),
+              modRewrite(['^/resume|menu$ /']),
             ];
           }
         }
@@ -61,7 +64,7 @@ module.exports = function (grunt) {
         delay: 500
       },
       dev: {
-        path: 'http://localhost:<%= connect.options.port %>/webpack-dev-server/'
+        path: 'http://localhost:<%= connect.options.port %>/'
       },
       dist: {
         path: 'http://localhost:<%= connect.options.port %>/'

@@ -6,7 +6,7 @@ var AppHeader = require('./AppHeader');
 
 require('../../styles/less/main.less');
 
-var ContactManagerReactApp = React.createClass({
+var ContactApp = React.createClass({
   render: function() {
     return (
       <div>
@@ -23,4 +23,4 @@ var ContactManagerReactApp = React.createClass({
   }
 });
 
-module.exports = ContactManagerReactApp;
+module.exports = ContactApp;
