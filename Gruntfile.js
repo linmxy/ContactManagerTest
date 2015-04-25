@@ -1,6 +1,7 @@
 'use strict';
 
 var modRewrite = require('connect-modrewrite');
+var gzip = require('connect-gzip');
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
@@ -51,6 +52,7 @@ module.exports = function (grunt) {
           keepalive: true,
           middleware: function (connect) {
             return [
+              gzip.gzip({ matchType: /javascript|json|css/ }),
               modRewrite(['^/contact/.* /\/']),
               mountFolder(connect, pkgConfig.dist)
             ];
