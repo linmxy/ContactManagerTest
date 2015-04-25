@@ -110,12 +110,12 @@ module.exports = function (grunt) {
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build','connect:dist']);
+    }else{
+      grunt.task.run([
+        'open:dev',
+        'webpack-dev-server'
+      ]);
     }
-
-    grunt.task.run([
-      'open:dev',
-      'webpack-dev-server'
-    ]);
   });
 
   grunt.registerTask('heroku', function(target){
