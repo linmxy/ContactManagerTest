@@ -3,6 +3,6 @@ ReactJS Demo [![Circle CI](https://circleci.com/gh/linmxy/ContactManagerTest.svg
 
 An example of ReactJS + Webpack + Flux.
 ## Demo
-https://contack-manager-react.herokuapp.com/#/
+https://contact-manager-react.herokuapp.com/
 
 
