@@ -118,6 +118,10 @@ module.exports = function (grunt) {
     ]);
   });
 
+  grunt.registerTask('heroku', function(target){
+    return grunt.task.run(['build', 'open:dist', 'connect:dist']);
+  });
+
   grunt.registerTask('test', ['karma']);
 
   grunt.registerTask('build', ['clean', 'copy', 'webpack']);
