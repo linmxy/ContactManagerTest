@@ -1,11 +1,11 @@
 'use strict';
 
-var ContactApp = require('./ContactApp');
+var ContactApp = require('./components/ContactApp');
 var React = require('react');
 var Router = require('react-router');
 var Route = Router.Route;
-var ContactList = require('./ContactList');
-var ContactForm = require('./ContactForm');
+var ContactList = require('./components/ContactList');
+var ContactForm = require('./components/ContactForm');
 
 var content = document.getElementById('content');
 
