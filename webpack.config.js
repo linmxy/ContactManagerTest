@@ -19,7 +19,7 @@ module.exports = {
   devtool: "#inline-source-map",
   entry: [
       'webpack/hot/only-dev-server',
-      './src/scripts/main.js'
+      './src/scripts/components/main.js'
   ],
 
   stats: {

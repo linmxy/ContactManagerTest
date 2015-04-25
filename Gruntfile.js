@@ -1,5 +1,6 @@
 'use strict';
 
+var modRewrite = require('connect-modrewrite');
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
@@ -50,7 +51,8 @@ module.exports = function (grunt) {
           keepalive: true,
           middleware: function (connect) {
             return [
-              mountFolder(connect, pkgConfig.dist)
+              mountFolder(connect, pkgConfig.dist),
+              modRewrite(['^/contact/.* / [L]'])
             ];
           }
         }
