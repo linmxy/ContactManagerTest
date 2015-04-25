@@ -17,30 +17,15 @@ function create(contact) {
   _contacts[contact.id] = contact;
 }
 
-/**
- * Update a Contact item.
- * @param  {string} id
- * @param {object} updates An object literal containing only the data to be
- *     updated.
- */
 function update(id, updates) {
   _contacts[id] = __.extend({}, _contacts[id], updates);
 }
 
-/**
- * Delete a Contact item.
- * @param  {string} id
- */
 function destroy(id) {
   delete _contacts[id];
 }
 
 var ContactStore = __.extend({}, EventEmitter.prototype, {
-
-  /**
-   * Get the entire collection of TODOs.
-   * @return {object}
-   */
   getAll: function() {
     return __.values(_contacts);
   },
@@ -49,36 +34,83 @@ var ContactStore = __.extend({}, EventEmitter.prototype, {
     this.emit(CHANGE_EVENT);
   },
 
-  /**
-   * @param {function} callback
-   */
   addChangeListener: function(callback) {
     this.on(CHANGE_EVENT, callback);
   },
 
-  /**
-   * @param {function} callback
-   */
   removeChangeListener: function(callback) {
     this.removeListener(CHANGE_EVENT, callback);
   }
 });
 
+
 // Register callback to handle all updates
 AppDispatcher.register(function(action) {
-  var text;
+  var contact, id;
 
   switch(action.actionType) {
     case ContactConstants.CONTACT_CREATE:
-      text = action.text.trim();
-      if (text !== '') {
-        create(text);
+      contact = action.contact;
+      if (contact) {
+        create(contact);
+        ContactStore.emitChange();
+      }
+      break;
+    case ContactConstants.CONTACT_UPDATE:
+      contact = action.contact;
+      if (contact && contact.id) {
+        update(contact);
+        ContactStore.emitChange();
+      }
+      break;
+    case ContactConstants.CONTACT_DESTROY:
+      id = action.id;
+      if (id) {
+        destroy(id);
         ContactStore.emitChange();
       }
       break;
 
     default:
       // no op
+  }
+});
+
+
+AppDispatcher.dispatch({
+  actionType: ContactConstants.CONTACT_CREATE,
+  contact: {
+    'name': 'Test',
+    'tel': '324234234',
+    'email': 'asdf@dsf',
+    'avatar': '/images/faces/1.jpg'
+  }
+});
+AppDispatcher.dispatch({
+  actionType: ContactConstants.CONTACT_CREATE,
+  contact: {
+    'name': 'Test',
+    'tel': '324234234',
+    'email': 'asdf@dsf',
+    'avatar': '/images/faces/1.jpg'
+  }
+});
+AppDispatcher.dispatch({
+  actionType: ContactConstants.CONTACT_CREATE,
+  contact: {
+    'name': 'Test',
+    'tel': '324234234',
+    'email': 'asdf@dsf',
+    'avatar': '/images/faces/1.jpg'
+  }
+});
+AppDispatcher.dispatch({
+  actionType: ContactConstants.CONTACT_CREATE,
+  contact: {
+    'name': 'Test',
+    'tel': '324234234',
+    'email': 'asdf@dsf',
+    'avatar': '/images/faces/1.jpg'
   }
 });
 

@@ -13,6 +13,7 @@ var Routes = (
   <Route path="/" handler={ContactManagerReactApp}>
     <Route name="contactList" handler={ContactList}/>
     <Route name="contactForm" handler={ContactForm}/>
+    <Router.DefaultRoute handler={ContactList} />
   </Route>
 );
 

@@ -17,11 +17,10 @@ var ContactActions = {
    * @param  {string} id The ID of the ToDo item
    * @param  {string} text
    */
-  update: function(id, text) {
+  update: function(id, contact) {
     AppDispatcher.dispatch({
       actionType: ContactConstants.CONTACT_UPDATE,
-      id: id,
-      text: text
+      contact
     });
   },
 
