@@ -4,12 +4,15 @@ var ContactManagerReactApp = require('./ContactManagerReactApp');
 var React = require('react');
 var Router = require('react-router');
 var Route = Router.Route;
+var ContactList = require('./ContactList');
+var ContactForm = require('./ContactForm');
 
 var content = document.getElementById('content');
 
 var Routes = (
-  <Route handler={ContactManagerReactApp}>
-    <Route name="/" handler={ContactManagerReactApp}/>
+  <Route path="/" handler={ContactManagerReactApp}>
+    <Route name="contactList" handler={ContactList}/>
+    <Route name="contactForm" handler={ContactForm}/>
   </Route>
 );
 

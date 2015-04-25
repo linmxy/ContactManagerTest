@@ -22,6 +22,163 @@
   <component name="FavoritesManager">
     <favorites_list name="ContactManagerReact" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1120">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1429931601000" expanded="true" signature="0:269" placeholder="/*...*/" />
+                <marker date="1429931601000" expanded="true" signature="336:1333" placeholder="{&quot;cache&quot;: true...}" />
+                <marker date="1429931601000" expanded="true" signature="349:406" placeholder="{&quot;filename&quot;: 'main.js'...}" />
+                <marker date="1429931601000" expanded="true" signature="466:549" placeholder="[...]" />
+                <marker date="1429931601000" expanded="true" signature="561:602" placeholder="{&quot;colors&quot;: true...}" />
+                <marker date="1429931601000" expanded="true" signature="616:763" placeholder="{...}" />
+                <marker date="1429931601000" expanded="true" signature="658:759" placeholder="{&quot;styles&quot;: '../../../src/styles'...}" />
+                <marker date="1429931601000" expanded="true" signature="775:1232" placeholder="{...}" />
+                <marker date="1429931601000" expanded="true" signature="793:878" placeholder="[...]" />
+                <marker date="1429931601000" expanded="true" signature="794:877" placeholder="{&quot;test&quot;: /\.js$/...}" />
+                <marker date="1429931601000" expanded="true" signature="893:1228" placeholder="[...]" />
+                <marker date="1429931601000" expanded="true" signature="894:998" placeholder="{&quot;test&quot;: /\.js$/...}" />
+                <marker date="1429931601000" expanded="true" signature="1000:1081" placeholder="{&quot;test&quot;: /\.less/...}" />
+                <marker date="1429931601000" expanded="true" signature="1083:1152" placeholder="{&quot;test&quot;: /\.css$/...}" />
+                <marker date="1429931601000" expanded="true" signature="1154:1227" placeholder="{&quot;test&quot;: /\.(png|jpg)$/...}" />
+                <marker date="1429931601000" expanded="true" signature="1246:1330" placeholder="[...]" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.dist.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.dist.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="356" max-vertical-offset="1136">
+              <caret line="58" column="43" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="43" />
+              <folding>
+                <marker date="1429931601000" expanded="true" signature="0:148" placeholder="/*...*/" />
+                <marker date="1429931601000" expanded="true" signature="217:1274" placeholder="{&quot;debug&quot;: false...}" />
+                <marker date="1429931601000" expanded="true" signature="230:313" placeholder="{&quot;publicPath&quot;: '/assets/'...}" />
+                <marker date="1429931601000" expanded="true" signature="405:447" placeholder="{&quot;colors&quot;: true...}" />
+                <marker date="1429931601000" expanded="true" signature="461:650" placeholder="[...]" />
+                <marker date="1429931601000" expanded="true" signature="664:811" placeholder="{...}" />
+                <marker date="1429931601000" expanded="true" signature="706:807" placeholder="{&quot;styles&quot;: '../../../src/styles'...}" />
+                <marker date="1429931601000" expanded="true" signature="824:1272" placeholder="{...}" />
+                <marker date="1429931601000" expanded="true" signature="842:927" placeholder="[...]" />
+                <marker date="1429931601000" expanded="true" signature="843:926" placeholder="{&quot;test&quot;: /\.js$/...}" />
+                <marker date="1429931601000" expanded="true" signature="943:1268" placeholder="[...]" />
+                <marker date="1429931601000" expanded="true" signature="944:1038" placeholder="{&quot;test&quot;: /\.js$/...}" />
+                <marker date="1429931601000" expanded="true" signature="1040:1109" placeholder="{&quot;test&quot;: /\.css$/...}" />
+                <marker date="1429931601000" expanded="true" signature="1111:1192" placeholder="{&quot;test&quot;: /\.less/...}" />
+                <marker date="1429931601000" expanded="true" signature="1194:1267" placeholder="{&quot;test&quot;: /\.(png|jpg)$/...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/karma.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1426584447000" expanded="true" signature="79:1621" placeholder="{...}" />
+                <marker date="1426584447000" expanded="true" signature="94:1617" placeholder="{&quot;basePath&quot;: ''...}" />
+                <marker date="1426584447000" expanded="true" signature="154:228" placeholder="[...]" />
+                <marker date="1426584447000" expanded="true" signature="249:306" placeholder="{...}" />
+                <marker date="1426584447000" expanded="true" signature="321:1138" placeholder="{&quot;cache&quot;: true...}" />
+                <marker date="1426584447000" expanded="true" signature="356:938" placeholder="{...}" />
+                <marker date="1426584447000" expanded="true" signature="375:930" placeholder="[...]" />
+                <marker date="1426584447000" expanded="true" signature="376:474" placeholder="{&quot;test&quot;: /\.gif/...}" />
+                <marker date="1426584447000" expanded="true" signature="476:574" placeholder="{&quot;test&quot;: /\.jpg/...}" />
+                <marker date="1426584447000" expanded="true" signature="576:674" placeholder="{&quot;test&quot;: /\.png/...}" />
+                <marker date="1426584447000" expanded="true" signature="676:751" placeholder="{&quot;test&quot;: /\.js$/...}" />
+                <marker date="1426584447000" expanded="true" signature="753:846" placeholder="{&quot;test&quot;: /\.less/...}" />
+                <marker date="1426584447000" expanded="true" signature="848:929" placeholder="{&quot;test&quot;: /\.css$/...}" />
+                <marker date="1426584447000" expanded="true" signature="955:1132" placeholder="{...}" />
+                <marker date="1426584447000" expanded="true" signature="972:1124" placeholder="{...}" />
+                <marker date="1426584447000" expanded="true" signature="1159:1210" placeholder="{...}" />
+                <marker date="1426584447000" expanded="true" signature="1174:1204" placeholder="{&quot;colors&quot;: true...}" />
+                <marker date="1426584447000" expanded="true" signature="1320:1508" placeholder="//..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactManagerReactApp.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/components/ContactManagerReactApp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppHeader.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scripts/components/AppHeader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18461539" vertical-offset="0" max-vertical-offset="780">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactForm.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/components/ContactForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/components/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactList.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/components/ContactList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="784">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/scripts/components/ContactList.js" />
+        <option value="$PROJECT_DIR$/src/scripts/components/ContactForm.js" />
+        <option value="$PROJECT_DIR$/src/scripts/components/main.js" />
+        <option value="$PROJECT_DIR$/src/scripts/components/ContactManagerReactApp.js" />
+        <option value="$PROJECT_DIR$/src/scripts/components/AppHeader.js" />
+      </list>
+    </option>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
@@ -72,6 +229,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManagerReact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManagerReact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManagerReact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManagerReact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManagerReact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManagerReact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManagerReact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManagerReact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -81,8 +310,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="editorconfig.notification" value="Applied .editorconfig settings" />
+    <property name="JavaScriptLanguageLevel" value="JSX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src/scripts/components" />
+    </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -138,5 +378,139 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1120">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1429931601000" expanded="true" signature="0:269" placeholder="/*...*/" />
+            <marker date="1429931601000" expanded="true" signature="336:1333" placeholder="{&quot;cache&quot;: true...}" />
+            <marker date="1429931601000" expanded="true" signature="349:406" placeholder="{&quot;filename&quot;: 'main.js'...}" />
+            <marker date="1429931601000" expanded="true" signature="466:549" placeholder="[...]" />
+            <marker date="1429931601000" expanded="true" signature="561:602" placeholder="{&quot;colors&quot;: true...}" />
+            <marker date="1429931601000" expanded="true" signature="616:763" placeholder="{...}" />
+            <marker date="1429931601000" expanded="true" signature="658:759" placeholder="{&quot;styles&quot;: '../../../src/styles'...}" />
+            <marker date="1429931601000" expanded="true" signature="775:1232" placeholder="{...}" />
+            <marker date="1429931601000" expanded="true" signature="793:878" placeholder="[...]" />
+            <marker date="1429931601000" expanded="true" signature="794:877" placeholder="{&quot;test&quot;: /\.js$/...}" />
+            <marker date="1429931601000" expanded="true" signature="893:1228" placeholder="[...]" />
+            <marker date="1429931601000" expanded="true" signature="894:998" placeholder="{&quot;test&quot;: /\.js$/...}" />
+            <marker date="1429931601000" expanded="true" signature="1000:1081" placeholder="{&quot;test&quot;: /\.less/...}" />
+            <marker date="1429931601000" expanded="true" signature="1083:1152" placeholder="{&quot;test&quot;: /\.css$/...}" />
+            <marker date="1429931601000" expanded="true" signature="1154:1227" placeholder="{&quot;test&quot;: /\.(png|jpg)$/...}" />
+            <marker date="1429931601000" expanded="true" signature="1246:1330" placeholder="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.dist.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1136">
+          <caret line="58" column="43" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="43" />
+          <folding>
+            <marker date="1429931601000" expanded="true" signature="0:148" placeholder="/*...*/" />
+            <marker date="1429931601000" expanded="true" signature="217:1274" placeholder="{&quot;debug&quot;: false...}" />
+            <marker date="1429931601000" expanded="true" signature="230:313" placeholder="{&quot;publicPath&quot;: '/assets/'...}" />
+            <marker date="1429931601000" expanded="true" signature="405:447" placeholder="{&quot;colors&quot;: true...}" />
+            <marker date="1429931601000" expanded="true" signature="461:650" placeholder="[...]" />
+            <marker date="1429931601000" expanded="true" signature="664:811" placeholder="{...}" />
+            <marker date="1429931601000" expanded="true" signature="706:807" placeholder="{&quot;styles&quot;: '../../../src/styles'...}" />
+            <marker date="1429931601000" expanded="true" signature="824:1272" placeholder="{...}" />
+            <marker date="1429931601000" expanded="true" signature="842:927" placeholder="[...]" />
+            <marker date="1429931601000" expanded="true" signature="843:926" placeholder="{&quot;test&quot;: /\.js$/...}" />
+            <marker date="1429931601000" expanded="true" signature="943:1268" placeholder="[...]" />
+            <marker date="1429931601000" expanded="true" signature="944:1038" placeholder="{&quot;test&quot;: /\.js$/...}" />
+            <marker date="1429931601000" expanded="true" signature="1040:1109" placeholder="{&quot;test&quot;: /\.css$/...}" />
+            <marker date="1429931601000" expanded="true" signature="1111:1192" placeholder="{&quot;test&quot;: /\.less/...}" />
+            <marker date="1429931601000" expanded="true" signature="1194:1267" placeholder="{&quot;test&quot;: /\.(png|jpg)$/...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1426584447000" expanded="true" signature="79:1621" placeholder="{...}" />
+            <marker date="1426584447000" expanded="true" signature="94:1617" placeholder="{&quot;basePath&quot;: ''...}" />
+            <marker date="1426584447000" expanded="true" signature="154:228" placeholder="[...]" />
+            <marker date="1426584447000" expanded="true" signature="249:306" placeholder="{...}" />
+            <marker date="1426584447000" expanded="true" signature="321:1138" placeholder="{&quot;cache&quot;: true...}" />
+            <marker date="1426584447000" expanded="true" signature="356:938" placeholder="{...}" />
+            <marker date="1426584447000" expanded="true" signature="375:930" placeholder="[...]" />
+            <marker date="1426584447000" expanded="true" signature="376:474" placeholder="{&quot;test&quot;: /\.gif/...}" />
+            <marker date="1426584447000" expanded="true" signature="476:574" placeholder="{&quot;test&quot;: /\.jpg/...}" />
+            <marker date="1426584447000" expanded="true" signature="576:674" placeholder="{&quot;test&quot;: /\.png/...}" />
+            <marker date="1426584447000" expanded="true" signature="676:751" placeholder="{&quot;test&quot;: /\.js$/...}" />
+            <marker date="1426584447000" expanded="true" signature="753:846" placeholder="{&quot;test&quot;: /\.less/...}" />
+            <marker date="1426584447000" expanded="true" signature="848:929" placeholder="{&quot;test&quot;: /\.css$/...}" />
+            <marker date="1426584447000" expanded="true" signature="955:1132" placeholder="{...}" />
+            <marker date="1426584447000" expanded="true" signature="972:1124" placeholder="{...}" />
+            <marker date="1426584447000" expanded="true" signature="1159:1210" placeholder="{...}" />
+            <marker date="1426584447000" expanded="true" signature="1174:1204" placeholder="{&quot;colors&quot;: true...}" />
+            <marker date="1426584447000" expanded="true" signature="1320:1508" placeholder="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="784">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/components/ContactForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/components/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/components/ContactList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/components/ContactManagerReactApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/components/AppHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18461539" vertical-offset="0" max-vertical-offset="780">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
