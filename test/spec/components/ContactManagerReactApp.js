@@ -9,7 +9,7 @@ describe('Main', function () {
     container.id = 'content';
     document.body.appendChild(container);
 
-    ContactManagerReactApp = require('components/ContactManagerReactApp.js');
+    ContactManagerReactApp = require('components/ContactApp.js');
     component = React.createElement(ContactManagerReactApp);
   });
 
