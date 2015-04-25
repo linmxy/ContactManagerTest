@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: v0.10.28
+test:
+  pre:
+    - grunt test
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: contack-manager-react
