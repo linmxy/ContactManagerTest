@@ -1,0 +1,12 @@
+.background-linear-gradient(@gradfrom:rgb(0,0,0), @gradto:rgb(255,255,255), @startPc: 0, @endPc:100%,
+  @repeat:repeat-x) {
+  background-repeat: @repeat;
+  background-color: @gradto;
+  background-image: -moz-linear-gradient(top,  @gradfrom @startPc, @gradto @endPc);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(@startPc,@gradfrom), color-stop(@endPc ,@gradto));
+  background-image: -webkit-linear-gradient(top,  @gradfrom @startPc, @gradto @endPc);
+  background-image: -o-linear-gradient(top,  @gradfrom @startPc, @gradto @endPc);
+  background-image: -ms-linear-gradient(top,  @gradfrom @startPc, @gradto @endPc);
+  background-image: linear-gradient(to bottom,  @gradfrom @startPc, @gradto @endPc);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@gradfrom, endColorstr=@gradto,GradientType=0 );
+}
