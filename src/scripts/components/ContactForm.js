@@ -26,6 +26,7 @@ var ContactForm = React.createClass({
     ContactActions.create(this.state);
     this.context.router.transitionTo('contactList');
   },
+
   render: function () {
     return (
       <div>

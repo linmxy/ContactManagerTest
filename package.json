@@ -43,5 +43,8 @@
     "grunt-contrib-clean": "~0.6.0",
     "less-loader": "^2.0.0",
     "react-hot-loader": "^1.0.7"
+  },
+  "engines": {
+    "node": "0.12.x"
   }
 }
