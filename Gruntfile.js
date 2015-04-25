@@ -22,7 +22,7 @@ module.exports = function (grunt) {
       options: webpackDistConfig,
 
       dist: {
-        cache: false
+        cache: true
       }
     },
 
@@ -51,8 +51,8 @@ module.exports = function (grunt) {
           keepalive: true,
           middleware: function (connect) {
             return [
-              mountFolder(connect, pkgConfig.dist),
-              modRewrite(['^/contact/.* / [L]'])
+              modRewrite(['^/contact/.* /\/']),
+              mountFolder(connect, pkgConfig.dist)
             ];
           }
         }
