@@ -119,7 +119,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('heroku', function(target){
-    return grunt.task.run(['build', 'connect:dist']);
+    return grunt.task.run(['build']);
   });
 
   grunt.registerTask('test', ['karma']);
