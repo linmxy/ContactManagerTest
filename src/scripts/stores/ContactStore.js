@@ -14,6 +14,7 @@ var _contacts = {};
  */
 function create(contact) {
   contact.id = util.oid();
+  contact.avatar =  '/images/faces/' + Math.ceil(14 * Math.random()) + '.jpg';
   _contacts[contact.id] = contact;
 }
 
@@ -76,42 +77,16 @@ AppDispatcher.register(function(action) {
   }
 });
 
+[{'name': 'Test', 'tel': '324234234', 'email': 'asdf@dsf'},
+  {'name': 'Test', 'tel': '324234234', 'email': 'asdf@dsf'},
+  {'name': 'Test', 'tel': '324234234', 'email': 'asdf@dsf'},
+  {'name': 'Test', 'tel': '324234234', 'email': 'asdf@dsf'},
+].forEach(function (contact) {
+    AppDispatcher.dispatch({
+      actionType: ContactConstants.CONTACT_CREATE,
+      contact
+    });
+  });
 
-AppDispatcher.dispatch({
-  actionType: ContactConstants.CONTACT_CREATE,
-  contact: {
-    'name': 'Test',
-    'tel': '324234234',
-    'email': 'asdf@dsf',
-    'avatar': '/images/faces/1.jpg'
-  }
-});
-AppDispatcher.dispatch({
-  actionType: ContactConstants.CONTACT_CREATE,
-  contact: {
-    'name': 'Test',
-    'tel': '324234234',
-    'email': 'asdf@dsf',
-    'avatar': '/images/faces/1.jpg'
-  }
-});
-AppDispatcher.dispatch({
-  actionType: ContactConstants.CONTACT_CREATE,
-  contact: {
-    'name': 'Test',
-    'tel': '324234234',
-    'email': 'asdf@dsf',
-    'avatar': '/images/faces/1.jpg'
-  }
-});
-AppDispatcher.dispatch({
-  actionType: ContactConstants.CONTACT_CREATE,
-  contact: {
-    'name': 'Test',
-    'tel': '324234234',
-    'email': 'asdf@dsf',
-    'avatar': '/images/faces/1.jpg'
-  }
-});
 
 module.exports = ContactStore;

@@ -1,6 +1,7 @@
 'use strict';
 
 var React = require('react');
+var Link = require('react-router').Link;
 var ContactItem = require('./ContactItem');
 var ContactStore = require('../stores/ContactStore');
 
@@ -30,7 +31,7 @@ var ContactList = React.createClass({
   render: function() {
     var contacts = this.state.contacts;
     var contactViews = contacts.map(function(contact){
-      return <ContactItem id={contact.id} {...contact} />;
+      return <ContactItem id={contact.id} contact={contact} />;
     });
 
     return (
@@ -38,7 +39,7 @@ var ContactList = React.createClass({
         <h2 className="page-header text-center">List of contacts</h2>
         <div className="row">
           <p className="col-sm-12 text-center">
-            <a href="#contacts/new" className="btn btn-lg btn-outline">Add Contact</a>
+            <Link to="contactCreate" className="btn btn-lg btn-outline">Add Contact</Link>
           </p>
         </div>
           <ul className="media-list row contacts-container">

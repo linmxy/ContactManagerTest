@@ -11,9 +11,10 @@ var content = document.getElementById('content');
 
 var Routes = (
   <Route path="/" handler={ContactManagerReactApp}>
-    <Route name="contactList" handler={ContactList}/>
-    <Route name="contactForm" handler={ContactForm}/>
-    <Router.DefaultRoute handler={ContactList} />
+    <Route name="contactList" path="/" handler={ContactList}/>
+    <Route name="contactCreate" path="contact/create" handler={ContactForm}/>
+    <Route name="contactUpdate" path="contact/update"  handler={ContactForm}/>
+    <Router.DefaultRoute  path="/" handler={ContactList} />
   </Route>
 );
 
