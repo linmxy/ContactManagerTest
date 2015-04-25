@@ -13,7 +13,8 @@ var ContactItem = React.createClass({
   },
 
   _edit: function(e){
-    this.context.router.transitionTo('contactUpdate',null, this.props.contact);
+    var contact = this.props.contact;
+    this.context.router.transitionTo('contactUpdate',{id: contact.id});
   },
   render: function () {
     var contact = this.props.contact;

@@ -31,6 +31,10 @@ var ContactStore = __.extend({}, EventEmitter.prototype, {
     return __.values(_contacts);
   },
 
+  getById: function(id) {
+    return _contacts[id];
+  },
+
   emitChange: function() {
     this.emit(CHANGE_EVENT);
   },

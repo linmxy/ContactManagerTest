@@ -4,6 +4,7 @@ var React = require('react');
 var Router = require('react-router');
 var Link = Router.Link;
 var ContactActions = require('../actions/ContactActions');
+var ContactStore = require('../stores/ContactStore');
 
 var ContactForm = React.createClass({
   contextTypes: {
@@ -11,7 +12,8 @@ var ContactForm = React.createClass({
   },
   getInitialState: function () {
     var { router } = this.context;
-    var contact = router.getCurrentQuery();
+    var params = router.getCurrentParams();
+    var contact = params.id? ContactStore.getById((params.id)): {};
     return {
       contact: contact
     };
