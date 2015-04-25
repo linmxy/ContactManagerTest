@@ -18,7 +18,7 @@ module.exports = {
 
   debug: false,
   devtool: false,
-  entry: './src/scripts/main.js',
+  entry: './src/scripts/components/main.js',
 
   stats: {
     colors: true,
@@ -36,7 +36,6 @@ module.exports = {
     extensions: ['', '.js'],
     alias: {
       'styles': '../../../src/styles',
-      'scripts': '../../../src/scripts/',
       'components': '../../../src/scripts/components/'
     }
   },
