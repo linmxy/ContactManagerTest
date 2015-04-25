@@ -4,7 +4,6 @@ var React = require('react/addons');
 var Router = require('react-router');
 var AppHeader = require('./AppHeader');
 
-require('../../styles/normalize.css');
 require('../../styles/main.css');
 
 var ContactManagerReactApp = React.createClass({

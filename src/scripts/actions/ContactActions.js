@@ -1,0 +1,40 @@
+var AppDispatcher = require('../dispatcher/AppDispatcher');
+var ContactConstants = require('../constants/TodoConstants');
+
+var ContactActions = {
+
+  /**
+   * @param  {string} text
+   */
+  create: function(contact) {
+    AppDispatcher.dispatch({
+      actionType: ContactConstants.CONTACT_CREATE,
+      contact
+    });
+  },
+
+  /**
+   * @param  {string} id The ID of the ToDo item
+   * @param  {string} text
+   */
+  update: function(id, text) {
+    AppDispatcher.dispatch({
+      actionType: ContactConstants.CONTACT_UPDATE,
+      id: id,
+      text: text
+    });
+  },
+
+  /**
+   * @param  {string} id
+   */
+  destroy: function(id) {
+    AppDispatcher.dispatch({
+      actionType: ContactConstants.CONTACT_DESTROY,
+      id: id
+    });
+  }
+
+};
+
+module.exports = ContactActions;
