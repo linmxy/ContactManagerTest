@@ -28,20 +28,20 @@ module.exports = function (grunt) {
     'webpack-dev-server': {
       options: {
         hot: true,
-        port: 8000,
+        port: process.env.PORT || 8000,
         webpack: webpackDevConfig,
         publicPath: '/assets/',
-        contentBase: './<%= pkg.src %>/',
+        contentBase: './<%= pkg.src %>/'
       },
 
       start: {
-        keepAlive: true,
+        keepAlive: true
       }
     },
 
     connect: {
       options: {
-        port: 8000
+        port: process.env.PORT || 8000
       },
 
       dist: {
@@ -119,7 +119,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('heroku', function(target){
-    return grunt.task.run(['build', 'open:dist', 'connect:dist']);
+    return grunt.task.run(['build', 'connect:dist']);
   });
 
   grunt.registerTask('test', ['karma']);
