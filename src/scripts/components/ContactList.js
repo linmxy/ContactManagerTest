@@ -4,8 +4,10 @@ var React = require('react');
 var Link = require('react-router').Link;
 var ContactItem = require('./ContactItem');
 var ContactStore = require('../stores/ContactStore');
+var PureRenderMixin = require('react/addons').addons.PureRenderMixin;
 
 var ContactList = React.createClass({
+  mixins: [PureRenderMixin],
 
   getInitialState: function() {
     return this._getContactState();

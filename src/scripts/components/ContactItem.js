@@ -3,6 +3,7 @@
 var React = require('react');
 var Router = require('react-router');
 var Link = Router.Link;
+var ContactActions = require('../actions/ContactActions');
 
 var ContactItem = React.createClass({
   contextTypes: {
@@ -13,8 +14,10 @@ var ContactItem = React.createClass({
   },
 
   _edit: function(e){
-    var contact = this.props.contact;
-    this.context.router.transitionTo('contactUpdate',{id: contact.id});
+    this.context.router.transitionTo('contactUpdate',{id: this.props.contact.id});
+  },
+  _delete: function(e){
+    ContactActions.destroy(this.props.contact.id);
   },
   render: function () {
     var contact = this.props.contact;
@@ -30,7 +33,7 @@ var ContactItem = React.createClass({
               <a onClick={this._edit}>
                 <span className="glyphicon glyphicon-pencil"></span>
               </a>
-              <a className="delete-contract">
+              <a onClick={this._delete}>
                 <span className="glyphicon glyphicon-trash"></span>
               </a>
             </small>

@@ -7,54 +7,49 @@ var ContactActions = require('../actions/ContactActions');
 var ContactStore = require('../stores/ContactStore');
 
 var ContactForm = React.createClass({
+
+  mixins: [React.addons.LinkedStateMixin],
+
   contextTypes: {
     router: React.PropTypes.func
   },
+
   getInitialState: function () {
     var { router } = this.context;
     var params = router.getCurrentParams();
     var contact = params.id? ContactStore.getById((params.id)): {};
-    return {
-      contact: contact
-    };
-  },
-
-  _onChange: function(event) {
-    this.setState({
-      value: event.target.value
-    });
+    return contact;
   },
 
   _onSave: function (e) {
     e.preventDefault();
-    ContactActions.create(this.state.contact);
-    this.transitionTo('contactList');
+    ContactActions.create(this.state);
+    this.context.router.transitionTo('contactList');
   },
   render: function () {
-    var contact = this.state.contact;
     return (
       <div>
-        <h2 className="page-header text-center">{contact.id ? 'Edit' : 'New'} Contact</h2>
+        <h2 className="page-header text-center">{this.state.id ? 'Edit' : 'New'} Contact</h2>
         <form role="form" className="form-horizontal contract-form" onSubmit={this._onSave}>
           <div className="form-group">
             <label className="col-sm-4 control-label">Full name:</label>
             <div className="col-sm-6">
               <input type="text" className="form-control contact-name-input"
-                 value={contact.name} onChange={this._onChange}/>
+                 valueLink={this.linkState('name')}/>
             </div>
           </div>
           <div className="form-group">
             <label className="col-sm-4 control-label">Email address:</label>
             <div className="col-sm-6">
               <input type="email" className="form-control contact-email-input"
-                value={contact.email} onChange={this._onChange} />
+                valueLink={this.linkState('email')} />
             </div>
           </div>
           <div className="form-group">
             <label className="col-sm-4 control-label">Telephone number:</label>
             <div className="col-sm-6">
               <input type="tel" className="form-control contact-tel-input"
-                value={contact.tel} onChange={this._onChange}/>
+                valueLink={this.linkState('tel')}/>
             </div>
           </div>
           <div className="form-group">
