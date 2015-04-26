@@ -7,6 +7,10 @@
 'use strict';
 
 var webpack = require('webpack');
+var path = require('path');
+
+var node_modules_dir = path.join(__dirname, 'node_modules'),
+  app_dir          = path.join(__dirname, 'src');
 
 module.exports = {
 
@@ -24,13 +28,6 @@ module.exports = {
     colors: true,
     reasons: false
   },
-
-  plugins: [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.AggressiveMergingPlugin()
-  ],
 
   resolve: {
     extensions: ['', '.js'],
@@ -67,5 +64,27 @@ module.exports = {
       {test: /\.ttf$/, loader: "file-loader?prefix=font/"},
       {test: /\.svg$/, loader: "file-loader?prefix=font/"}
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      compress: {
+        warnings: false
+      }
+    }),
+    new webpack.optimize.CommonsChunkPlugin(
+      {
+        name: "vendor",
+        filename: 'vendor.bundle.js',
+        minChunks: function (module, count) {
+          return module.resource && module.resource.indexOf(app_dir) === -1;
+        }
+      }
+
+    )
+  ]
 };

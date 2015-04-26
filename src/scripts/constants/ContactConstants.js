@@ -1,3 +1,5 @@
+'use strict';
+
 var keyMirror = require('keymirror');
 
 var Constants = keyMirror({

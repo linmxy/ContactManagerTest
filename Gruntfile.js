@@ -3,7 +3,7 @@
 var modRewrite = require('connect-modrewrite');
 var gzip = require('connect-gzip');
 var mountFolder = function (connect, dir) {
-  return connect.static(require('path').resolve(dir));
+  return connect.static(require('path').resolve(dir), { maxAge: 86400000 });
 };
 
 var webpackDistConfig = require('./webpack.dist.config.js'),

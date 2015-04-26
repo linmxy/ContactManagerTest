@@ -21,7 +21,6 @@
     "load-grunt-tasks": "~0.6.0",
     "connect-modrewrite": "~0.7.11",
     "connect-gzip": "0.1.x",
-    "connect-gzip": "0.1.x",
     "grunt-contrib-connect": "~0.8.0",
     "webpack": "~1.4.3",
     "jsx-loader": "~0.12.2",
