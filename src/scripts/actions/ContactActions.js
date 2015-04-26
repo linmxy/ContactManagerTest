@@ -1,7 +1,7 @@
 'use strict';
 
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var ContactConstants = require('../constants/ContactConstants');
+import AppDispatcher from '../dispatcher/AppDispatcher';
+import ContactConstants from '../constants/ContactConstants';
 
 var ContactActions = {
 
@@ -39,4 +39,4 @@ var ContactActions = {
 
 };
 
-module.exports = ContactActions;
+export default ContactActions;

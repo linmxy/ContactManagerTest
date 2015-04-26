@@ -1,8 +1,8 @@
 'use strict';
 
-var React = require('react/addons');
-var Router = require('react-router');
-var AppHeader = require('./AppHeader');
+import React from 'react/addons';
+import Router from 'react-router';
+import AppHeader from './AppHeader';
 
 require('../../styles/less/main.less');
 

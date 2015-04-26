@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+import React from 'react';
 
 var AppHeader = React.createClass({
   render: function() {
@@ -15,4 +15,4 @@ var AppHeader = React.createClass({
   }
 });
 
-module.exports = AppHeader;
+export default AppHeader;

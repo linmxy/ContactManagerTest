@@ -1,11 +1,12 @@
 'use strict';
 
-var ContactApp = require('./components/ContactApp');
-var React = require('react');
-var Router = require('react-router');
-var Route = Router.Route;
-var ContactList = require('./components/ContactList');
-var ContactForm = require('./components/ContactForm');
+import ContactApp from './components/ContactApp';
+import React from'react';
+import Router from 'react-router';
+import ContactList from './components/ContactList';
+import ContactForm from './components/ContactForm';
+import NotFound from './components/NotFound';
+let Route = Router.Route;
 
 var content = document.getElementById('content');
 
@@ -15,6 +16,7 @@ var Routes = (
     <Route name="contactCreate" path="contact/create" handler={ContactForm}/>
     <Route name="contactUpdate" path="contact/update/:id"  handler={ContactForm}/>
     <Router.DefaultRoute handler={ContactList} />
+    <Router.NotFoundRoute handler={NotFound} />
   </Route>
 );
 

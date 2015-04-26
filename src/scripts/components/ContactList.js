@@ -1,13 +1,11 @@
 'use strict';
 
-var React = require('react');
-var Link = require('react-router').Link;
-var ContactItem = require('./ContactItem');
-var ContactStore = require('../stores/ContactStore');
-var PureRenderMixin = require('react/addons').addons.PureRenderMixin;
+import React from 'react';
+import {Link} from 'react-router';
+import ContactItem from './ContactItem';
+import ContactStore from '../stores/ContactStore';
 
 var ContactList = React.createClass({
-  mixins: [PureRenderMixin],
 
   getInitialState: function() {
     return this._getContactState();
@@ -52,4 +50,4 @@ var ContactList = React.createClass({
   }
 });
 
-module.exports = ContactList;
+export default ContactList;

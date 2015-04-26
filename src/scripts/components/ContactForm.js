@@ -1,9 +1,9 @@
 'use strict';
 
-var React = require('react');
-var Link = require('react-router').Link;
-var ContactActions = require('../actions/ContactActions');
-var ContactStore = require('../stores/ContactStore');
+import React from 'react';
+import {Link} from 'react-router';
+import ContactActions from '../actions/ContactActions';
+import ContactStore from '../stores/ContactStore';
 
 var ContactForm = React.createClass({
 
@@ -70,4 +70,4 @@ var ContactForm = React.createClass({
   }
 });
 
-module.exports = ContactForm;
+export default ContactForm;

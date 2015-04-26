@@ -2,9 +2,6 @@
 
 var modRewrite = require('connect-modrewrite');
 var gzip = require('connect-gzip');
-var mountFolder = function (connect, dir) {
-  return connect.static(require('path').resolve(dir), { maxAge: 86400000 });
-};
 
 var webpackDistConfig = require('./webpack.dist.config.js'),
     webpackDevConfig = require('./webpack.config.js');
@@ -46,15 +43,15 @@ module.exports = function (grunt) {
       options: {
         port: process.env.PORT || 8000
       },
-
       dist: {
         options: {
           keepalive: true,
           middleware: function (connect) {
             return [
+              modRewrite(['!\\.html|\\.js|\\.swf|\\.json|\\.xml|\\.css|\\.png|\\.jpg|\\.gif|\\.ico|\\.aff|\\.msi|\\.zip|\\.dic|\\.woff|\\.woff2|\\.eot|\\.ttf|\\.svg /\/ [L]']),
+              connect.static(require('path').resolve(pkgConfig.dist), { maxAge: 86400000 }),
               gzip.gzip({ matchType: /javascript|json|css/ }),
-              modRewrite(['^/contact/.* /\/']),
-              mountFolder(connect, pkgConfig.dist)
+              modRewrite(['^/.* /\/'])
             ];
           }
         }

@@ -43,7 +43,8 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'react-hot!jsx-loader?harmony'
+      loaders: ['react-hot', 'babel']
+      //loader: 'react-hot!jsx-loader?harmony'
     }, {
       test: /\.less/,
       loader: 'style-loader!css-loader!less-loader'

@@ -1,7 +1,7 @@
 'use strict';
 
-var React = require('react');
-var ContactActions = require('../actions/ContactActions');
+import React from 'react';
+import ContactActions from '../actions/ContactActions';
 
 var ContactItem = React.createClass({
   contextTypes: {
@@ -51,4 +51,4 @@ var ContactItem = React.createClass({
   }
 });
 
-module.exports = ContactItem;
+export default ContactItem;

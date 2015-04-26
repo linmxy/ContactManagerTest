@@ -1,16 +1,16 @@
 'use strict';
+import React from 'react/addons';
+import ContactApp from 'components/ContactApp.js';
 
 describe('Main', function () {
-  var React = require('react/addons');
-  var ContactManagerReactApp, component;
+
+  var component;
 
   beforeEach(function () {
     var container = document.createElement('div');
     container.id = 'content';
     document.body.appendChild(container);
-
-    ContactManagerReactApp = require('components/ContactApp.js');
-    component = React.createElement(ContactManagerReactApp);
+    component = React.createElement(ContactApp);
   });
 
   it('should create a new instance of ContactManagerReactApp', function () {

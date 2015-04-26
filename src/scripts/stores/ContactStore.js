@@ -1,10 +1,10 @@
 'use strict';
 
-var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
-var ContactConstants = require('../constants/ContactConstants');
-var util = require('../util/util');
-var __ = require('lodash');
+import AppDispatcher from '../dispatcher/AppDispatcher';
+import {EventEmitter} from 'events';
+import ContactConstants from '../constants/ContactConstants';
+import util from '../util/util';
+import __  from 'lodash';
 
 var CHANGE_EVENT = 'change';
 var LOCALSTORAGE_KEY = 'contacts-localCache';
@@ -124,4 +124,4 @@ if(__.keys(_contacts).length<1){
     });
 }
 
-module.exports = ContactStore;
+export default ContactStore;

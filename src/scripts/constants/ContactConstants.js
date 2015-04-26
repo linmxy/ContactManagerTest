@@ -1,11 +1,9 @@
 'use strict';
 
-var keyMirror = require('keymirror');
+import keyMirror from 'keymirror';
 
-var Constants = keyMirror({
+export default keyMirror({
   CONTACT_CREATE: null,
   CONTACT_DESTROY: null,
   CONTACT_UPDATE: null
 });
-
-module.exports = Constants;

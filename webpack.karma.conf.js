@@ -27,7 +27,8 @@ module.exports = function (config) {
           loader: 'url-loader?limit=10000&mimetype=image/png'
         }, {
           test: /\.js$/,
-          loader: 'jsx-loader?harmony'
+          exclude: /node_modules/,
+          loaders: ['react-hot', 'babel']
         }, {
           test: /\.less/,
           loader: 'style-loader!css-loader!less-loader'
