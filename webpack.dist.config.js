@@ -67,22 +67,22 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.UglifyJsPlugin(
-      //{
-      //  sourceMap: false,
-      //  compress: {
-      //    warnings: false
-      //  }
-      //}
+      {
+        sourceMap: false,
+        compress: {
+          warnings: false
+        }
+      }
     ),
-    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
-    //new webpack.optimize.CommonsChunkPlugin(
-    //  {
-    //    name: "vendor",
-    //    filename: 'vendor.bundle.js',
-    //    minChunks: function (module, count) {
-    //      return module.resource && module.resource.indexOf('node_modules') >= 0;
-    //    }
-    //  }
-    //)
+    //new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
+    new webpack.optimize.CommonsChunkPlugin(
+      {
+        name: "vendor",
+        filename: 'vendor.bundle.js',
+        minChunks: function (module, count) {
+          return module.resource && module.resource.indexOf('node_modules') >= 0;
+        }
+      }
+    )
   ]
 };
