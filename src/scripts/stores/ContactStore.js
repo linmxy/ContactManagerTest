@@ -24,6 +24,7 @@ function create(contact) {
 
 function update(id, updates) {
   _contacts[id] = __.extend({}, _contacts[id], updates);
+  localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(_contacts));
 }
 
 function destroy(id) {
@@ -66,9 +67,8 @@ AppDispatcher.register(function(action) {
       }
       break;
     case ContactConstants.CONTACT_UPDATE:
-      contact = action.contact;
-      if (contact && contact.id) {
-        update(contact);
+      if (action && action.id && action.contact) {
+        update(action.id, action.contact);
         ContactStore.emitChange();
       }
       break;
@@ -85,7 +85,7 @@ AppDispatcher.register(function(action) {
   }
 });
 
-if(ContactStore.getAll().length<1){
+if(__.keys(_contacts).length<1){
   [{
     name : 'Terrence S. Hatfield',
     tel: '651-603-1723',

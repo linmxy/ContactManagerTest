@@ -22,6 +22,7 @@ var ContactActions = {
   update: function(id, contact) {
     AppDispatcher.dispatch({
       actionType: ContactConstants.CONTACT_UPDATE,
+      id,
       contact
     });
   },
