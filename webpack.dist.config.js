@@ -7,10 +7,6 @@
 'use strict';
 
 var webpack = require('webpack');
-var path = require('path');
-
-var node_modules_dir = path.join(__dirname, 'node_modules'),
-  app_dir          = path.join(__dirname, 'src');
 
 module.exports = {
 
@@ -81,10 +77,9 @@ module.exports = {
         name: "vendor",
         filename: 'vendor.bundle.js',
         minChunks: function (module, count) {
-          return module.resource && module.resource.indexOf(app_dir) === -1;
+          return module.resource && module.resource.indexOf('node_modules') >= 0;
         }
       }
-
     )
   ]
 };
