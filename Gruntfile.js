@@ -48,10 +48,9 @@ module.exports = function (grunt) {
           keepalive: true,
           middleware: function (connect) {
             return [
-              modRewrite(['!\\.html|\\.js|\\.swf|\\.json|\\.xml|\\.css|\\.png|\\.jpg|\\.gif|\\.ico|\\.aff|\\.msi|\\.zip|\\.dic|\\.woff|\\.woff2|\\.eot|\\.ttf|\\.svg /\/ [L]']),
-              connect.static(require('path').resolve(pkgConfig.dist), { maxAge: 86400000 }),
               gzip.gzip({ matchType: /javascript|json|css/ }),
-              modRewrite(['^/.* /\/'])
+              modRewrite(['!\\.html|\\.js|\\.swf|\\.json|\\.xml|\\.css|\\.png|\\.jpg|\\.gif|\\.ico|\\.aff|\\.msi|\\.zip|\\.dic|\\.woff|\\.woff2|\\.eot|\\.ttf|\\.svg /\/ [L]']),
+              connect.static(require('path').resolve(pkgConfig.dist), { maxAge: 86400000 })
             ];
           }
         }
