@@ -22,7 +22,11 @@ var ContactForm = React.createClass({
 
   _onSave: function (e) {
     e.preventDefault();
-    ContactActions.create(this.state);
+    if(this.state.id){
+      ContactActions.update(this.state.id, this.state);
+    }else{
+      ContactActions.create(this.state);
+    }
     this.context.router.transitionTo('contactList');
   },
 
